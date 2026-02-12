@@ -1,0 +1,133 @@
+/* Custom Colors and Styles */
+.bg-bakery {
+    background-color: #FDF5E6;
+}
+
+.navbar {
+    background-color: white;
+    padding: 1rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #fed7aa;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.logo {
+    font-size: 1.875rem;
+    font-weight: 900;
+    color: #D2691E;
+    font-style: italic;
+    letter-spacing: -0.05em;
+}
+
+.user-greet {
+    margin-right: 1rem;
+    color: #7c2d12;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.btn-logout {
+    background-color: #ef4444;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.container {
+    max-width: 72rem;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.section-title {
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: #5D4037;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.1em;
+    font-style: italic;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.card {
+    background-color: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-bottom: 8px solid #f97316;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.img-container {
+    position: relative;
+    height: 14rem;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.price-tag {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #ea580c;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.card-content {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card-content h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #451a03;
+    margin-bottom: 1rem;
+}
+
+.btn-order {
+    width: 100%;
+    background-color: #D2691E;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.btn-order:hover {
+    background-color: #7c2d12;
+}
